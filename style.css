@@ -1,0 +1,49 @@
+div {
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling the table element */
+.wrapper {
+    border-collapse: collapse; /* It is used to collapse adjacent cells and make a common border */
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling the header table row */
+
+.wrapper thead tr {
+    background-color: #0C8C76;
+    color: white;
+    text-align: left; /* Aligns the text to the left */
+    font-weight: bold;
+}
+
+/*Styling the table cells*/
+
+.wrapper th, .wrapper td {
+    padding: 12px 15px;
+}
+
+/*Styling the table rows*/
+
+.wrapper tbody tr {
+    border-bottom: 1px solid dimgrey;
+}
+
+.wrapper tbody tr:nth-of-type(even) {
+    background-color: lightgray;
+}
+
+.wrapper tbody tr:last-of-type {
+    border-bottom: 2px solid #0C8C76;
+}
+
+.wrapper tbody tr.active-row {
+    font-weight: bold;
+    color: #0C8C76;
+}
